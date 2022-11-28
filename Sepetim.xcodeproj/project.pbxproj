@@ -25,6 +25,10 @@
 		9D36CC1329352384006CE61C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CC1229352384006CE61C /* LoginViewController.swift */; };
 		9D36CC152935238E006CE61C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CC142935238E006CE61C /* RegisterViewController.swift */; };
 		9DBFA57D2935277F00B57855 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFA57C2935277F00B57855 /* Constants.swift */; };
+		9DBFA58029352C4300B57855 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9DBFA57F29352C4300B57855 /* FirebaseAnalytics */; };
+		9DBFA58229352C4300B57855 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9DBFA58129352C4300B57855 /* FirebaseAuth */; };
+		9DBFA58429352C4300B57855 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9DBFA58329352C4300B57855 /* FirebaseDatabase */; };
+		9DBFA58629352C4300B57855 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DBFA58529352C4300B57855 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBFA58429352C4300B57855 /* FirebaseDatabase in Frameworks */,
+				9DBFA58629352C4300B57855 /* FirebaseFirestore in Frameworks */,
+				9DBFA58029352C4300B57855 /* FirebaseAnalytics in Frameworks */,
+				9DBFA58229352C4300B57855 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +210,12 @@
 			dependencies = (
 			);
 			name = Sepetim;
+			packageProductDependencies = (
+				9DBFA57F29352C4300B57855 /* FirebaseAnalytics */,
+				9DBFA58129352C4300B57855 /* FirebaseAuth */,
+				9DBFA58329352C4300B57855 /* FirebaseDatabase */,
+				9DBFA58529352C4300B57855 /* FirebaseFirestore */,
+			);
 			productName = Sepetim;
 			productReference = 9D2FB998293515BC00170A53 /* Sepetim.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +288,9 @@
 				Base,
 			);
 			mainGroup = 9D2FB98F293515BC00170A53;
+			packageReferences = (
+				9DBFA57E29352C4200B57855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9D2FB999293515BC00170A53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -674,6 +691,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DBFA57E29352C4200B57855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DBFA57F29352C4300B57855 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DBFA57E29352C4200B57855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9DBFA58129352C4300B57855 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DBFA57E29352C4200B57855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9DBFA58329352C4300B57855 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DBFA57E29352C4200B57855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9DBFA58529352C4300B57855 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DBFA57E29352C4200B57855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D2FB990293515BC00170A53 /* Project object */;
 }

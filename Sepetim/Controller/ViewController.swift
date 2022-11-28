@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
 class ViewController: UIViewController , UICollectionViewDataSource , UICollectionViewDelegate {
     
