@@ -41,6 +41,15 @@ class ViewController: UIViewController , UICollectionViewDataSource , UICollecti
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ReusableCell")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     func views(viewdesign: UIView) {
         viewdesign.layer.cornerRadius = 18
         viewdesign.layer.shadowColor = UIColor.black.cgColor

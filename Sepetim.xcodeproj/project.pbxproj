@@ -21,6 +21,10 @@
 		9D2FB9D32935171000170A53 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D12935171000170A53 /* CollectionViewCell.swift */; };
 		9D2FB9D42935171000170A53 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D22935171000170A53 /* CollectionViewCell.xib */; };
 		9D2FB9D629351A3900170A53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D529351A3900170A53 /* GoogleService-Info.plist */; };
+		9D36CC112935204F006CE61C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CC102935204F006CE61C /* AccountViewController.swift */; };
+		9D36CC1329352384006CE61C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CC1229352384006CE61C /* LoginViewController.swift */; };
+		9D36CC152935238E006CE61C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36CC142935238E006CE61C /* RegisterViewController.swift */; };
+		9DBFA57D2935277F00B57855 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFA57C2935277F00B57855 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		9D2FB9D12935171000170A53 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9D2FB9D22935171000170A53 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		9D2FB9D529351A3900170A53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D36CC102935204F006CE61C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		9D36CC1229352384006CE61C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D36CC142935238E006CE61C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9DBFA57C2935277F00B57855 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,16 +117,17 @@
 		9D2FB99A293515BC00170A53 /* Sepetim */ = {
 			isa = PBXGroup;
 			children = (
+				9D36CC0F29352022006CE61C /* Controller */,
 				9D36CC0E29351B7B006CE61C /* Views */,
 				9D2FB9D0293516F800170A53 /* CollectionCell */,
 				9D2FB9CB2935167C00170A53 /* Model */,
 				9D2FB99B293515BC00170A53 /* AppDelegate.swift */,
 				9D2FB99D293515BC00170A53 /* SceneDelegate.swift */,
-				9D2FB99F293515BC00170A53 /* ViewController.swift */,
 				9D2FB9A4293515BD00170A53 /* Assets.xcassets */,
 				9D2FB9A6293515BD00170A53 /* LaunchScreen.storyboard */,
 				9D2FB9A9293515BD00170A53 /* Info.plist */,
 				9D2FB9D529351A3900170A53 /* GoogleService-Info.plist */,
+				9DBFA57C2935277F00B57855 /* Constants.swift */,
 			);
 			path = Sepetim;
 			sourceTree = "<group>";
@@ -164,6 +173,17 @@
 				9D2FB9A1293515BC00170A53 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9D36CC0F29352022006CE61C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FB99F293515BC00170A53 /* ViewController.swift */,
+				9D36CC102935204F006CE61C /* AccountViewController.swift */,
+				9D36CC1229352384006CE61C /* LoginViewController.swift */,
+				9D36CC142935238E006CE61C /* RegisterViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D36CC152935238E006CE61C /* RegisterViewController.swift in Sources */,
 				9D2FB9CF293516A900170A53 /* ContentBrain.swift in Sources */,
 				9D2FB9A0293515BC00170A53 /* ViewController.swift in Sources */,
+				9D36CC112935204F006CE61C /* AccountViewController.swift in Sources */,
 				9D2FB9D32935171000170A53 /* CollectionViewCell.swift in Sources */,
+				9DBFA57D2935277F00B57855 /* Constants.swift in Sources */,
+				9D36CC1329352384006CE61C /* LoginViewController.swift in Sources */,
 				9D2FB99C293515BC00170A53 /* AppDelegate.swift in Sources */,
 				9D2FB9CD2935168A00170A53 /* ViewContent.swift in Sources */,
 				9D2FB99E293515BC00170A53 /* SceneDelegate.swift in Sources */,
