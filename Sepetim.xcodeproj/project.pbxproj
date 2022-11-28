@@ -20,6 +20,7 @@
 		9D2FB9CF293516A900170A53 /* ContentBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9CE293516A900170A53 /* ContentBrain.swift */; };
 		9D2FB9D32935171000170A53 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D12935171000170A53 /* CollectionViewCell.swift */; };
 		9D2FB9D42935171000170A53 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D22935171000170A53 /* CollectionViewCell.xib */; };
+		9D2FB9D629351A3900170A53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D529351A3900170A53 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9D2FB9CE293516A900170A53 /* ContentBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBrain.swift; sourceTree = "<group>"; };
 		9D2FB9D12935171000170A53 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9D2FB9D22935171000170A53 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		9D2FB9D529351A3900170A53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				9D2FB9A4293515BD00170A53 /* Assets.xcassets */,
 				9D2FB9A6293515BD00170A53 /* LaunchScreen.storyboard */,
 				9D2FB9A9293515BD00170A53 /* Info.plist */,
+				9D2FB9D529351A3900170A53 /* GoogleService-Info.plist */,
 			);
 			path = Sepetim;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				9D2FB9A8293515BD00170A53 /* LaunchScreen.storyboard in Resources */,
 				9D2FB9A5293515BD00170A53 /* Assets.xcassets in Resources */,
+				9D2FB9D629351A3900170A53 /* GoogleService-Info.plist in Resources */,
 				9D2FB9D42935171000170A53 /* CollectionViewCell.xib in Resources */,
 				9D2FB9A3293515BC00170A53 /* Main.storyboard in Resources */,
 			);
@@ -499,7 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6TVQSAB3DR;
+				DEVELOPMENT_TEAM = WFF8B456G8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sepetim/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
