@@ -8,8 +8,11 @@
 import UIKit
 import FirebaseCore
 import FirebaseFirestore
+import FirebaseAuth
+import GoogleSignIn
 
 class ViewController: UIViewController , UICollectionViewDataSource , UICollectionViewDelegate {
+    
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -43,6 +46,8 @@ class ViewController: UIViewController , UICollectionViewDataSource , UICollecti
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ReusableCell")
     }
+    @IBAction func accountButton(_ sender: UIButton) {
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -52,6 +57,11 @@ class ViewController: UIViewController , UICollectionViewDataSource , UICollecti
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
+    
+    
+    
+    
     func views(viewdesign: UIView) {
         viewdesign.layer.cornerRadius = 18
         viewdesign.layer.shadowColor = UIColor.black.cgColor

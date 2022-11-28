@@ -254,6 +254,10 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="accountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5f-wY-Czm"/>
+                                                    <segue destination="wih-YK-fyC" kind="show" id="rXo-bf-qCr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -542,7 +546,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g20-wQ-nZX"/>
+        <segue reference="FxC-dZ-KjD"/>
+        <segue reference="rXo-bf-qCr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="annebebek" width="219" height="230"/>
