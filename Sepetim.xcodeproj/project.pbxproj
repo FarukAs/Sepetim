@@ -109,12 +109,12 @@
 		9D2FB99A293515BC00170A53 /* Sepetim */ = {
 			isa = PBXGroup;
 			children = (
+				9D36CC0E29351B7B006CE61C /* Views */,
 				9D2FB9D0293516F800170A53 /* CollectionCell */,
 				9D2FB9CB2935167C00170A53 /* Model */,
 				9D2FB99B293515BC00170A53 /* AppDelegate.swift */,
 				9D2FB99D293515BC00170A53 /* SceneDelegate.swift */,
 				9D2FB99F293515BC00170A53 /* ViewController.swift */,
-				9D2FB9A1293515BC00170A53 /* Main.storyboard */,
 				9D2FB9A4293515BD00170A53 /* Assets.xcassets */,
 				9D2FB9A6293515BD00170A53 /* LaunchScreen.storyboard */,
 				9D2FB9A9293515BD00170A53 /* Info.plist */,
@@ -156,6 +156,14 @@
 				9D2FB9D22935171000170A53 /* CollectionViewCell.xib */,
 			);
 			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		9D36CC0E29351B7B006CE61C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FB9A1293515BC00170A53 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
