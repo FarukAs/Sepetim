@@ -16,6 +16,10 @@
 		9D2FB9B3293515BD00170A53 /* SepetimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9B2293515BD00170A53 /* SepetimTests.swift */; };
 		9D2FB9BD293515BD00170A53 /* SepetimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9BC293515BD00170A53 /* SepetimUITests.swift */; };
 		9D2FB9BF293515BD00170A53 /* SepetimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9BE293515BD00170A53 /* SepetimUITestsLaunchTests.swift */; };
+		9D2FB9CD2935168A00170A53 /* ViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9CC2935168A00170A53 /* ViewContent.swift */; };
+		9D2FB9CF293516A900170A53 /* ContentBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9CE293516A900170A53 /* ContentBrain.swift */; };
+		9D2FB9D32935171000170A53 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D12935171000170A53 /* CollectionViewCell.swift */; };
+		9D2FB9D42935171000170A53 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FB9D22935171000170A53 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9D2FB9B8293515BD00170A53 /* SepetimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SepetimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2FB9BC293515BD00170A53 /* SepetimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimUITests.swift; sourceTree = "<group>"; };
 		9D2FB9BE293515BD00170A53 /* SepetimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9D2FB9CC2935168A00170A53 /* ViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContent.swift; sourceTree = "<group>"; };
+		9D2FB9CE293516A900170A53 /* ContentBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBrain.swift; sourceTree = "<group>"; };
+		9D2FB9D12935171000170A53 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		9D2FB9D22935171000170A53 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		9D2FB99A293515BC00170A53 /* Sepetim */ = {
 			isa = PBXGroup;
 			children = (
+				9D2FB9D0293516F800170A53 /* CollectionCell */,
+				9D2FB9CB2935167C00170A53 /* Model */,
 				9D2FB99B293515BC00170A53 /* AppDelegate.swift */,
 				9D2FB99D293515BC00170A53 /* SceneDelegate.swift */,
 				9D2FB99F293515BC00170A53 /* ViewController.swift */,
@@ -125,6 +135,24 @@
 				9D2FB9BE293515BD00170A53 /* SepetimUITestsLaunchTests.swift */,
 			);
 			path = SepetimUITests;
+			sourceTree = "<group>";
+		};
+		9D2FB9CB2935167C00170A53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FB9CC2935168A00170A53 /* ViewContent.swift */,
+				9D2FB9CE293516A900170A53 /* ContentBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D2FB9D0293516F800170A53 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FB9D12935171000170A53 /* CollectionViewCell.swift */,
+				9D2FB9D22935171000170A53 /* CollectionViewCell.xib */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +261,7 @@
 			files = (
 				9D2FB9A8293515BD00170A53 /* LaunchScreen.storyboard in Resources */,
 				9D2FB9A5293515BD00170A53 /* Assets.xcassets in Resources */,
+				9D2FB9D42935171000170A53 /* CollectionViewCell.xib in Resources */,
 				9D2FB9A3293515BC00170A53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2FB9CF293516A900170A53 /* ContentBrain.swift in Sources */,
 				9D2FB9A0293515BC00170A53 /* ViewController.swift in Sources */,
+				9D2FB9D32935171000170A53 /* CollectionViewCell.swift in Sources */,
 				9D2FB99C293515BC00170A53 /* AppDelegate.swift in Sources */,
+				9D2FB9CD2935168A00170A53 /* ViewContent.swift in Sources */,
 				9D2FB99E293515BC00170A53 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,14 +469,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6TVQSAB3DR;
+				DEVELOPMENT_TEAM = WFF8B456G8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sepetim/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,8 +505,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
